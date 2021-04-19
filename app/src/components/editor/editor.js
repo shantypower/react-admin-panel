@@ -126,7 +126,9 @@ export default class Editor extends Component {
     .post("./api/savePage.php", {pageName: this.currentPage, html})
     .then(() => this.showNotifications('Успешно сохранено', 'success'))
     .catch(() => this.showNotifications('Ошибка сохранения', 'danger'))
-    .finally(this.isLoaded);
+    .finally(() => {
+      this.isLoaded();
+    });
 
     this.loadBackupsList();
   }

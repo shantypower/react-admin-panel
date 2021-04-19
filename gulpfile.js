@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 const cleanCss = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 
-const dist = "E:/РАБОТА/Work/СЕРВЕР/OSPanel/domains/react-admin-panel/admin";
+const dist = "E:/РАБОТА/Work/СЕРВЕР/OSPanel/domains/pestovobani-with-admin/admin";
 // Здесь должен быть путь к папке admin в вашем проекте на локальном сервере
 
 const prod = "./build/";
